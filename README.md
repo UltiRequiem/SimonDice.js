@@ -1,10 +1,9 @@
 # Simon Dice
 
-<p>
-<a href="https://gitmoji.dev"><img src="https://img.shields.io/badge/gitmoji-%20😜-FFDD67.svg">
-<a href="https://github.com/UltiRequiem/SimonDice.js/blob/main/LICENSE"><img alt="License: MIT" src="https://black.readthedocs.io/en/stable/_static/license.svg"></a>
-<a href="https://ultirequiem.github.io/SimonDice.js"><img src="https://tokei.rs/b1/github/UltiRequiem/SimonDice.js?category=lines" alt="Code Lines"></a>
-</p>
+[![GitMoji](https://img.shields.io/badge/gitmoji-%20😜-FFDD67.svg)](https://gitmoji.dev)
+[![Language Grade](https://img.shields.io/lgtm/grade/javascript/g/UltiRequiem/SimonDice.js.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/UltiRequiem/SimonDice.js/context:javascript)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![Lines Of Code](https://img.shields.io/tokei/lines/github.com/UltiRequiem/SimonDice.js?color=blue&label=Total%20Lines)](https://github.com/UltiRequiem/SimonDice.js)
 
 ![Screenshot](./img/screenshotDos.png)
 
