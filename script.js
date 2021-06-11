@@ -107,18 +107,48 @@ class Juego {
         this.nivel++;
         this.eliminarEventosClick();
         if (this.nivel === ULTIMO_NIVEL + 1) {
-          // Ganó!
+          this.winGame();
         } else {
-          setTimeout(this.siguienteNivel, 1500);
+          this.winLevel();
         }
       }
     } else {
-      alert('Perdiste.');
+      this.loseGame();
     }
+  }
+
+  deleteClickEvents() {
+    this.colors.forEach((item) =>
+      item.removeEventListener('click', this.chooseColor)
+    );
+  }
+
+  winGame() {
+    swal('Simon Colors', 'Congratulations, you win!', 'success').then(() =>
+      this.initialize()
+    );
+  }
+
+  loseGame() {
+    swal(
+      'You lose :(',
+      "But you can try it again, don't give up!",
+      'error'
+    ).then(() => {
+      this.deleteClickEvents();
+      this.initialize();
+    });
+  }
+
+  winLevel() {
+    swal('Simon Colors', 'Perfect!, next level', 'success').then(() =>
+      setTimeout(this.siguienteNivel(), 800)
+    );
   }
 }
 
 const empezarJuego = () => {
-  alert('El juego va a empezar.');
-  window.juego = new Juego();
+  swal('Simon Dice', '¡El Juego va a empezar!', 'success').then(() =>
+    setTimeout((window.juego = new Juego()))
+  );
 };
