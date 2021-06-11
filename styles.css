@@ -1,9 +1,10 @@
 body {
   margin: 0;
-  background: #dedede;
+  background: #e9e9e9;
   display: flex;
   align-items: center;
   height: 100vh;
+  font-family: system-ui;
 }
 
 .gameboard {
@@ -14,6 +15,7 @@ body {
   margin: 0 auto;
   max-height: 60vh;
   max-width: 60vh;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
 }
 
 .color {
@@ -31,50 +33,47 @@ body {
 }
 
 .celeste {
-  background: #22a6b3;
+  background: #22377c;
+  transition: 0.2s;
 }
 
 .celeste.light {
-  background: #7ed6df;
+  background: #123ece;
+  transform: scale(1.03);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .violeta {
-  background: #be2edd;
+  background: #7b1592;
+  transition: 0.2s;
 }
 
 .violeta.light {
-  background: #e056fd;
+  background: #bf0ce7;
+  transform: scale(1.03);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .naranja {
-  background: #f0932b;
+  background: #a32727;
+  transition: 0.2s;
 }
 
 .naranja.light {
-  background: #ffbe76;
+  background: #e61111;
+  transform: scale(1.03);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .verde {
-  background: #6ab04c;
+  background: #1c864c;
+  transition: 0.2s;
 }
 
 .verde.light {
-  background: #badc58;
-}
-
-.btn-start {
-  width: 400px;
-  height: 100px;
-  background: #ecf0f1;
-  color: #2c3e50;
-  font-size: 2.5rem;
-  position: absolute;
-  top: calc(50% - 50px);
-  left: calc(50% - 200px);
-}
-
-.hide {
-  display: none;
+  background: #10e46f;
+  transform: scale(1.03);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .btn-start {
@@ -84,9 +83,10 @@ body {
   background: #ecf0f1;
   color: #2c3e50;
   border: none;
-  border-bottom: 4px solid #c4c6c7;
+  border: 2px solid #2c3e50;
   border-radius: 8px;
-  font-size: 3em;
+  font-size: 2em;
+  letter-spacing: 1.5px;
   position: absolute;
   top: calc(50% - 50px);
   left: calc(50% - 210px);
@@ -98,8 +98,13 @@ body {
   color: #ecf0f1;
   background: #2c3e50;
   border-bottom: 4px solid #1f3346;
+  letter-spacing: -1px;
 }
 
 .btn-start:active {
   transform: scale(0.95);
+}
+
+.hide {
+  display: none;
 }
