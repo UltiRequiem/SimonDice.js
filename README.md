@@ -6,7 +6,7 @@
 <a href="https://ultirequiem.github.io/SimonDice.js"><img src="https://tokei.rs/b1/github/UltiRequiem/SimonDice.js?category=lines" alt="Code Lines"></a>
 </p>
 
-![Screenshot](./img/screenshot.png)
+![Screenshot](./img/screenshotDos.png)
 
 Proyecto final del curso de [fundamentos de JavaScript](https://platzi.com/clases/fundamentos-javascript-2018) en [Platzi](https://platzi.com).
 
